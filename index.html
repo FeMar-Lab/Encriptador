@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.html">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <img src="./ima/LogoALURA.png">
+        <div class="encriptar">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="¡Ingresa el texto aquí!"></textarea>
+        </div>
+        <div class="terminos">
+            <img src="./ima/exclamation-img.png">
+            <p>Solo letras minúsculas y sin acento</p>
+        </div>
+        <div class="botones">
+            <button class="boton-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <input type="button" class="boton-desencriptar" value="Desencriptar" onclick="desencriptar()"/>
+        </div>
+        <div class="encriptado">
+            <img src="ima/Muñeco.png" alt="" id="Muñeco" />
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Desarrollado por Félix Martínez</p>
+        </footer>
+    </div>
+    
+</body>
+<script src="codigo.js"></script>
+</html>
+
